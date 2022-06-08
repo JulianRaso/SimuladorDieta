@@ -52,27 +52,27 @@ class Usuario:
         #Poco o Ningun Ejercicio
         if(nivelActividadFisica == 1):
             calorias = tmbFinal * 1.2
-            calorias = (calorias - pesoFinal)
+            calorias = abs(calorias - pesoFinal)
             return calorias
         #Ejercicio Ligero
         if(nivelActividadFisica == 2):
             calorias = tmbFinal* 1.375
-            calorias = (calorias - pesoFinal)
+            calorias = abs(calorias - pesoFinal)
             return calorias
         #Ejercicio Moderado
         if(nivelActividadFisica == 3):
             calorias = tmbFinal * 1.55
-            calorias = (calorias - pesoFinal)
+            calorias = abs(calorias - pesoFinal)
             return calorias
         #Deportista
         if(nivelActividadFisica == 4 ):
             calorias = tmbFinal * 1.72
-            calorias = (calorias - pesoFinal)
+            calorias = abs(calorias - pesoFinal)
             return calorias
         #Atleta
         if(nivelActividadFisica == 5):
             calorias = tmbFinal * 1.9
-            calorias = (calorias - pesoFinal)
+            calorias = abs(calorias - pesoFinal)
             return calorias
 
     #Calcular calorias a Consumir x Comida
